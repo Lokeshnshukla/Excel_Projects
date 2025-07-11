@@ -4,7 +4,7 @@ Objective-
 Vrinda store wants to create an annual sales report for 2022. So that, Vrinda can understand their customers and grow more sales in 2023.  
 
 
-Sample Insights- \
+Sample Insights-  
 * Women are more likely to buy compared to men.
 * Maharashtra, Karnataka and Uttar Pradesh are top 3.
 * Adult agr group (30-49 yrs) is max contributing.
