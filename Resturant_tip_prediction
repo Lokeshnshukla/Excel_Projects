@@ -1,0 +1,72 @@
+# 🧮 Predicting Restaurant Tips using Excel Regression
+
+This is an end-to-end predictive analytics project where we use **Multiple Linear Regression** in **Microsoft Excel** to predict **restaurant tips** based on variables like `total_bill`, `size`, and encoded categorical features.  
+
+✅ Built as part of my **Data Analyst Certification** from **Simplilearn**.
+
+---
+
+## 📌 Project Objective
+
+Predict the `tip` amount a customer will leave based on:
+
+- Gender (`sex_encoded`)
+- Smoking status (`smoker_encoded`)
+- Day (`day_encoded`)
+- Time (`time_encoded`)
+- Group size (`size`)
+- Total bill amount (`total_bill`)
+
+---
+
+## 🧠 Techniques & Tools
+
+| Technique         | Tool Used      |
+|------------------|----------------|
+| Data Encoding     | Excel formulas |
+| Correlation Matrix| `=CORREL()`    |
+| Regression Model  | Excel Data Analysis ToolPak / `=LINEST()` |
+| RMSE Calculation  | `=SQRT(AVERAGE(Sq_Error))` |
+| Evaluation        | ANOVA, p-values, t-Stats |
+
+---
+
+## 📊 Regression Formula (from Excel Output)
+
+
+Tip = 0.672 + 0.192 × Size + 0.093 × Total_Bill
+
+yaml
+Copy
+Edit
+
+---
+
+## 📈 RMSE Formula Used
+
+```excel
+
+=SQRT(AVERAGE((Actual_Tip - Predicted_Tip)^2))
+Root Mean Squared Error (RMSE): ≈ 1.015
+
+R² (Coefficient of Determination): 0.467
+
+Adjusted R²: 0.462
+
+Multiple R (Correlation): 0.683
+
+🧾 Key Insights
+📈 Group Size and Total Bill have the strongest positive impact on tip amount.
+
+🔍 Categorical features (sex, smoker, day, time) show lower correlation.
+
+✅ Significance F < 0.05 — model is statistically significant.
+
+🧮 Correlation Matrix Snippet
+Feature	Correlation with Tip
+Total Bill	0.67
+Size	0.49
+Day_Encoded	-0.13
+Time_Encoded	-0.12
+
+
